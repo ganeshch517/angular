@@ -1,0 +1,33 @@
+<h2 class="text-center" style="color: tomato; margin: 20px;">Bikes Details</h2>
+
+<div class="container">
+
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">COMPANY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>{{bikeDetails.id}}</td>
+                <td>{{bikeDetails.name}}</td>
+                <td>{{bikeDetails.name}}</td>
+            </tr>
+            </tbody>
+    </table>
+        
+    <div class="backbutton">
+        <button class="btn btn-warning" (click)="goProducts()">Products</button>
+        <button class="btn btn-danger" (click)="goHome()">Home</button>
+    </div>
+</div>
+
+<ul>
+  <li class="nav-item"><a class="nav-link" routerLink="detail1">Details ONE component</a></li>
+  <li class="nav-item"><a class="nav-link" routerLink="detail2">Details TWO component</a></li>
+</ul>
+
+<router-outlet></router-outlet>
